@@ -1,0 +1,28 @@
+<div class='main-wrap'>
+  <!-- <h1>Hello <%= current_user.email %></h1> -->
+  <!-- <h3>This is a simple rails app, using <%= Rails.version %></h3> -->
+
+  <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+
+  <%= javascript_include_tag('Utils.js') %>
+  <%= javascript_include_tag('GameObject.js') %>
+  <%= javascript_include_tag('DefenderBullet.js') %>
+  <%= javascript_include_tag('InvaderBullet.js') %>
+  <%= javascript_include_tag('Defender.js') %>
+  <%= javascript_include_tag('Invader.js') %>
+  <%= javascript_include_tag('MotherShip.js') %>
+  <%= javascript_include_tag('GameObjectFactory.js') %>
+  <%= javascript_include_tag('GameEngine.js') %>
+
+      <div id="status"> %>
+          Score: <span id="score">0</span> Lives: <span id="lives">3</span>
+      </div>
+      <button id="playBtn">
+          Play
+      </button>
+      <div id="invadersMatrixDiv">
+
+      </div>
+
+      <script type="text/javascript" src="../javascripts/UILayer.js"></script>
+</div>
